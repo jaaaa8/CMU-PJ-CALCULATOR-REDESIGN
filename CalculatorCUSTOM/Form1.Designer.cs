@@ -252,7 +252,7 @@
             this.btnBACKSPACE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBACKSPACE.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBACKSPACE.ForeColor = System.Drawing.Color.White;
-            this.btnBACKSPACE.Location = new System.Drawing.Point(431, 322);
+            this.btnBACKSPACE.Location = new System.Drawing.Point(436, 321);
             this.btnBACKSPACE.Margin = new System.Windows.Forms.Padding(0);
             this.btnBACKSPACE.Name = "btnBACKSPACE";
             this.btnBACKSPACE.Size = new System.Drawing.Size(108, 93);

@@ -84,7 +84,7 @@ namespace CalculatorCUSTOM
                 {
                     txtDISPLAY.Text = "Invalid input";
                     isErrorState = true;
-                        
+                    
                     return;
                 }
             }
@@ -92,7 +92,7 @@ namespace CalculatorCUSTOM
             {
                 txtDISPLAY.Text = "Invalid input";
                 isErrorState = true;
-               
+                
                 return;
             }
             else
@@ -202,26 +202,25 @@ namespace CalculatorCUSTOM
         // Xử lý dấu %
         private void btnPHANTRAM_Click(object sender, EventArgs e)
         {
-            try
+            HandleErrorState(); // Xử lý trạng thái lỗi nếu có
+
+            // Nếu đang nhập một số âm → báo lỗi
+            if (txtDISPLAY.Text.StartsWith("-"))
             {
-                if (double.TryParse(txtDISPLAY.Text, out double s2))
-                {
-                    txtDISPLAY.Text = (s2 / 100).ToString();
-                }
-                else
-                {
-                    txtDISPLAY.Text = "Invalid input";
-                    isErrorState = true; // Kích hoạt trạng thái lỗi
-                    
-                }
+                txtDISPLAY.Text = "Invalid input";
+                isErrorState = true;
+                return;
             }
-            catch
+
+            // Thêm % vào biểu thức, tránh trường hợp thêm trùng lặp
+            if (!txtDISPLAY.Text.EndsWith("%"))
             {
-                txtDISPLAY.Text = "Error";
-                isErrorState = true; // Kích hoạt trạng thái lỗi
-                
+                txtDISPLAY.Text += "%";
+                bieuthuc += "%";
+                UpdateCurrentHistory();
             }
         }
+
 
         // Các nút phép toán
         private void btnCONG_Click(object sender, EventArgs e)
@@ -287,11 +286,49 @@ namespace CalculatorCUSTOM
         // Xóa một ký tự
         private void btnXOA_Click(object sender, EventArgs e)
         {
+            // Nếu đang ở trạng thái lỗi hoặc đã hiện kết quả, reset hoàn toàn
+            if (isErrorState || pheptinh == "" && s2 == 0 && txtDISPLAY.Text != "")
+            {
+                ResetState();
+                txtDISPLAY.Text = "";
+                txtCURRENTHISTORY.Text = "";
+                return;
+            }
+
             if (!string.IsNullOrEmpty(txtDISPLAY.Text))
             {
+                // Xóa từng ký tự trong txtDISPLAY và bieuthuc
                 txtDISPLAY.Text = txtDISPLAY.Text.Substring(0, txtDISPLAY.Text.Length - 1);
+                if (bieuthuc.Length > 0) // Đảm bảo không xóa vượt giới hạn
+                {
+                    bieuthuc = bieuthuc.Substring(0, bieuthuc.Length - 1);
+                }
             }
+            else if (!string.IsNullOrEmpty(pheptinh))
+            {
+                // Xóa phép toán nếu txtDISPLAY đã trống
+                pheptinh = "";
+                bieuthuc = bieuthuc.Substring(0, bieuthuc.LastIndexOf(' ')).Trim();
+            }
+            else if (s1 != 0)
+            {
+                // Xóa từng ký tự trong s1
+                string s1Str = s1.ToString();
+                if (s1Str.Length > 1)
+                {
+                    s1Str = s1Str.Substring(0, s1Str.Length - 1);
+                    s1 = double.Parse(s1Str);
+                }
+                else
+                {
+                    s1 = 0; // Nếu chỉ còn một chữ số, reset s1
+                }
+                bieuthuc = s1.ToString();
+            }
+
+            UpdateCurrentHistory(); // Cập nhật lại txtCURRENTHISTORY
         }
+
 
         // Xử lý kết quả
         private void btnKETQUA_Click(object sender, EventArgs e)
@@ -300,13 +337,35 @@ namespace CalculatorCUSTOM
             {
                 double finalResult = 0;
 
-                // Lấy giá trị nhập vào cho s2 (có xử lý số âm)
+                // Lấy giá trị nhập vào cho s2
                 string inputS2 = txtDISPLAY.Text;
-                if (!double.TryParse(inputS2, out s2))
+                if (inputS2.StartsWith("√"))
+                {
+                    string input = inputS2.Replace("√", "");
+                    if (double.TryParse(input, out double sqrtValue))
+                    {
+                        if (sqrtValue < 0)
+                        {
+                            txtDISPLAY.Text = "Invalid input";
+                            isErrorState = true;
+
+                            return;
+                        }
+                        s2 = Math.Sqrt(sqrtValue);
+                    }
+                    else
+                    {
+                        txtDISPLAY.Text = "Invalid input";
+                        isErrorState = true;
+
+                        return;
+                    }
+                }
+                else if (!double.TryParse(inputS2, out s2))
                 {
                     txtDISPLAY.Text = "Invalid input";
                     isErrorState = true;
-
+                    ;
                     return;
                 }
 
@@ -317,7 +376,7 @@ namespace CalculatorCUSTOM
                         finalResult = s1 + s2;
                         break;
                     case "➖":
-                        finalResult = s1 - s2; // Phép trừ 2 số âm sẽ được xử lý chính xác ở đây
+                        finalResult = s1 - s2;
                         break;
                     case "✖️":
                         finalResult = s1 * s2;
