@@ -34,6 +34,7 @@
             this.txtHISTORY = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCLEARHISTORY = new System.Windows.Forms.Button();
+            this.txtCURRENTHISTORY = new System.Windows.Forms.TextBox();
             this.btnCLEAR = new CalculatorCUSTOM.ThienButton();
             this.btnCONG = new CalculatorCUSTOM.ThienButton();
             this.btnCAN = new CalculatorCUSTOM.ThienButton();
@@ -55,7 +56,6 @@
             this.btn3 = new CalculatorCUSTOM.ThienButton();
             this.btn2 = new CalculatorCUSTOM.ThienButton();
             this.btn1 = new CalculatorCUSTOM.ThienButton();
-            this.txtCURRENTHISTORY = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,6 +141,21 @@
             this.btnCLEARHISTORY.Text = "🗑️";
             this.btnCLEARHISTORY.UseVisualStyleBackColor = true;
             this.btnCLEARHISTORY.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtCURRENTHISTORY
+            // 
+            this.txtCURRENTHISTORY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.txtCURRENTHISTORY.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCURRENTHISTORY.Enabled = false;
+            this.txtCURRENTHISTORY.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCURRENTHISTORY.ForeColor = System.Drawing.Color.Silver;
+            this.txtCURRENTHISTORY.Location = new System.Drawing.Point(4, 95);
+            this.txtCURRENTHISTORY.Margin = new System.Windows.Forms.Padding(0);
+            this.txtCURRENTHISTORY.Name = "txtCURRENTHISTORY";
+            this.txtCURRENTHISTORY.Size = new System.Drawing.Size(535, 40);
+            this.txtCURRENTHISTORY.TabIndex = 54;
+            this.txtCURRENTHISTORY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCURRENTHISTORY.TextChanged += new System.EventHandler(this.txtCURRENTHISTORY_TextChanged);
             // 
             // btnCLEAR
             // 
@@ -237,7 +252,7 @@
             this.btnBACKSPACE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBACKSPACE.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBACKSPACE.ForeColor = System.Drawing.Color.White;
-            this.btnBACKSPACE.Location = new System.Drawing.Point(436, 321);
+            this.btnBACKSPACE.Location = new System.Drawing.Point(431, 322);
             this.btnBACKSPACE.Margin = new System.Windows.Forms.Padding(0);
             this.btnBACKSPACE.Name = "btnBACKSPACE";
             this.btnBACKSPACE.Size = new System.Drawing.Size(108, 93);
@@ -581,22 +596,7 @@
             this.btn1.Text = "1";
             this.btn1.TextColor = System.Drawing.Color.White;
             this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtCURRENTHISTORY
-            // 
-            this.txtCURRENTHISTORY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.txtCURRENTHISTORY.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCURRENTHISTORY.Enabled = false;
-            this.txtCURRENTHISTORY.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCURRENTHISTORY.ForeColor = System.Drawing.Color.Silver;
-            this.txtCURRENTHISTORY.Location = new System.Drawing.Point(4, 95);
-            this.txtCURRENTHISTORY.Margin = new System.Windows.Forms.Padding(0);
-            this.txtCURRENTHISTORY.Name = "txtCURRENTHISTORY";
-            this.txtCURRENTHISTORY.Size = new System.Drawing.Size(535, 40);
-            this.txtCURRENTHISTORY.TabIndex = 54;
-            this.txtCURRENTHISTORY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtCURRENTHISTORY.TextChanged += new System.EventHandler(this.txtCURRENTHISTORY_TextChanged);
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // Form1
             // 
@@ -636,6 +636,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.button1_Click);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -74,7 +74,7 @@ namespace CalculatorCUSTOM
                     {
                         txtDISPLAY.Text = "Invalid input";
                         isErrorState = true;
-                        HandleErrorState(); // Gọi hàm xử lý lỗi để reset mọi thứ
+                        
                         return;
                     }
                     s1 = Math.Sqrt(sqrtValue); // Lưu giá trị thập phân
@@ -84,7 +84,7 @@ namespace CalculatorCUSTOM
                 {
                     txtDISPLAY.Text = "Invalid input";
                     isErrorState = true;
-                    HandleErrorState(); 
+                        
                     return;
                 }
             }
@@ -92,7 +92,7 @@ namespace CalculatorCUSTOM
             {
                 txtDISPLAY.Text = "Invalid input";
                 isErrorState = true;
-                HandleErrorState();
+               
                 return;
             }
             else
@@ -120,7 +120,7 @@ namespace CalculatorCUSTOM
         // Xử lý các nút số
         private void btn0_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn0.Text;
             bieuthuc += btn0.Text;
             UpdateCurrentHistory(); // Cập nhật txtCURRENTHISTORY
@@ -128,14 +128,14 @@ namespace CalculatorCUSTOM
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn1.Text;
             bieuthuc += btn1.Text;
             UpdateCurrentHistory();
         }
         private void btn2_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn2.Text;
             bieuthuc += btn2.Text;
             UpdateCurrentHistory();
@@ -143,14 +143,14 @@ namespace CalculatorCUSTOM
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn3.Text;
             bieuthuc += btn3.Text;
             UpdateCurrentHistory();
         }
         private void btn4_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn4.Text;
             bieuthuc += btn4.Text;
             UpdateCurrentHistory();
@@ -158,14 +158,14 @@ namespace CalculatorCUSTOM
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn5.Text;
             bieuthuc += btn5.Text;
             UpdateCurrentHistory();
         }
         private void btn6_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn6.Text;
             bieuthuc += btn6.Text;
             UpdateCurrentHistory();
@@ -173,21 +173,21 @@ namespace CalculatorCUSTOM
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn7.Text;
             bieuthuc += btn7.Text;
             UpdateCurrentHistory();
         }
         private void btn8_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn8.Text;
             bieuthuc += btn8.Text;
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            HandleErrorState();
+            if (isErrorState) HandleErrorState(); ;
             txtDISPLAY.Text += btn9.Text;
             bieuthuc += btn9.Text;
             UpdateCurrentHistory();
@@ -212,14 +212,14 @@ namespace CalculatorCUSTOM
                 {
                     txtDISPLAY.Text = "Invalid input";
                     isErrorState = true; // Kích hoạt trạng thái lỗi
-                    HandleErrorState();
+                    
                 }
             }
             catch
             {
                 txtDISPLAY.Text = "Error";
                 isErrorState = true; // Kích hoạt trạng thái lỗi
-                HandleErrorState();
+                
             }
         }
 
@@ -256,7 +256,7 @@ namespace CalculatorCUSTOM
             {
                 txtDISPLAY.Text = "";
                 isErrorState = false;
-                HandleErrorState();
+                
             }
 
             // Kiểm tra nếu căn bậc hai có sẵn
@@ -300,7 +300,7 @@ namespace CalculatorCUSTOM
                         {
                             txtDISPLAY.Text = "Invalid input";
                             isErrorState = true;
-                            HandleErrorState();
+                            
                             return;
                         }
                         s2 = Math.Sqrt(sqrtValue);
@@ -309,7 +309,7 @@ namespace CalculatorCUSTOM
                     {
                         txtDISPLAY.Text = "Invalid input";
                         isErrorState = true;
-                        HandleErrorState();
+                        ;
                         return;
                     }
                 }
@@ -317,7 +317,7 @@ namespace CalculatorCUSTOM
                 {
                     txtDISPLAY.Text = "Invalid input";
                     isErrorState = true;
-                    HandleErrorState();
+                    
                     return;
                 }
 
@@ -338,7 +338,7 @@ namespace CalculatorCUSTOM
                         {
                             txtDISPLAY.Text = "Cannot divide by 0";
                             isErrorState = true;
-                            HandleErrorState();
+                            
                             return;
                         }
                         finalResult = s1 / s2;
@@ -349,7 +349,7 @@ namespace CalculatorCUSTOM
                     default:
                         txtDISPLAY.Text = "Invalid operation";
                         isErrorState = true;
-                        HandleErrorState();
+                        
                         return;
                 }
 
@@ -368,7 +368,7 @@ namespace CalculatorCUSTOM
             {
                 txtDISPLAY.Text = $"Error: {ex.Message}";
                 isErrorState = true;
-                HandleErrorState();
+                ;
             }
         }
 
