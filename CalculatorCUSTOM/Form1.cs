@@ -231,8 +231,19 @@ namespace CalculatorCUSTOM
 
         private void btnTRU_Click(object sender, EventArgs e)
         {
+            // Nếu txtDISPLAY đang rỗng, dấu trừ được coi là nhập số âm
+            if (string.IsNullOrEmpty(txtDISPLAY.Text))
+            {
+                txtDISPLAY.Text = "-";
+                bieuthuc += "-";
+                UpdateCurrentHistory();
+                return;
+            }
+
+            // Nếu đã có giá trị, thực hiện phép toán trừ
             SetOperation("➖");
         }
+
 
         private void btnNHAN_Click(object sender, EventArgs e)
         {
@@ -289,35 +300,13 @@ namespace CalculatorCUSTOM
             {
                 double finalResult = 0;
 
-                // Lấy giá trị nhập vào cho s2
+                // Lấy giá trị nhập vào cho s2 (có xử lý số âm)
                 string inputS2 = txtDISPLAY.Text;
-                if (inputS2.StartsWith("√"))
-                {
-                    string input = inputS2.Replace("√", "");
-                    if (double.TryParse(input, out double sqrtValue))
-                    {
-                        if (sqrtValue < 0)
-                        {
-                            txtDISPLAY.Text = "Invalid input";
-                            isErrorState = true;
-                            
-                            return;
-                        }
-                        s2 = Math.Sqrt(sqrtValue);
-                    }
-                    else
-                    {
-                        txtDISPLAY.Text = "Invalid input";
-                        isErrorState = true;
-                        ;
-                        return;
-                    }
-                }
-                else if (!double.TryParse(inputS2, out s2))
+                if (!double.TryParse(inputS2, out s2))
                 {
                     txtDISPLAY.Text = "Invalid input";
                     isErrorState = true;
-                    
+
                     return;
                 }
 
@@ -328,7 +317,7 @@ namespace CalculatorCUSTOM
                         finalResult = s1 + s2;
                         break;
                     case "➖":
-                        finalResult = s1 - s2;
+                        finalResult = s1 - s2; // Phép trừ 2 số âm sẽ được xử lý chính xác ở đây
                         break;
                     case "✖️":
                         finalResult = s1 * s2;
@@ -338,7 +327,7 @@ namespace CalculatorCUSTOM
                         {
                             txtDISPLAY.Text = "Cannot divide by 0";
                             isErrorState = true;
-                            
+
                             return;
                         }
                         finalResult = s1 / s2;
@@ -349,7 +338,7 @@ namespace CalculatorCUSTOM
                     default:
                         txtDISPLAY.Text = "Invalid operation";
                         isErrorState = true;
-                        
+
                         return;
                 }
 
@@ -360,7 +349,7 @@ namespace CalculatorCUSTOM
 
                 // Reset trạng thái
                 ResetState();
-                
+
                 // Lưu kết quả làm s1 cho bài toán tiếp theo
                 s1 = finalResult;
             }
@@ -368,9 +357,10 @@ namespace CalculatorCUSTOM
             {
                 txtDISPLAY.Text = $"Error: {ex.Message}";
                 isErrorState = true;
-                ;
+
             }
         }
+
 
         // Reset lại trạng thái sau khi tính toán
         private void ResetState()
