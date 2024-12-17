@@ -63,6 +63,7 @@
             // 
             this.txtDISPLAY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtDISPLAY.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDISPLAY.Enabled = false;
             this.txtDISPLAY.Font = new System.Drawing.Font("Tahoma", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDISPLAY.ForeColor = System.Drawing.Color.Silver;
             this.txtDISPLAY.Location = new System.Drawing.Point(4, 143);
@@ -104,6 +105,7 @@
             // 
             this.txtHISTORY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtHISTORY.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHISTORY.Enabled = false;
             this.txtHISTORY.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHISTORY.ForeColor = System.Drawing.Color.Silver;
             this.txtHISTORY.Location = new System.Drawing.Point(559, 48);
@@ -585,6 +587,7 @@
             // 
             this.txtCURRENTHISTORY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtCURRENTHISTORY.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCURRENTHISTORY.Enabled = false;
             this.txtCURRENTHISTORY.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCURRENTHISTORY.ForeColor = System.Drawing.Color.Silver;
             this.txtCURRENTHISTORY.Location = new System.Drawing.Point(4, 95);
