@@ -183,6 +183,7 @@ namespace CalculatorCUSTOM
             if (isErrorState) HandleErrorState();
             txtDISPLAY.Text += btn8.Text;
             bieuthuc += btn8.Text;
+            UpdateCurrentHistory();
         }
 
         private void btn9_Click(object sender, EventArgs e)
@@ -202,25 +203,22 @@ namespace CalculatorCUSTOM
         // Xử lý dấu %
         private void btnPHANTRAM_Click(object sender, EventArgs e)
         {
-            HandleErrorState(); // Xử lý trạng thái lỗi nếu có
+            if (string.IsNullOrEmpty(txtDISPLAY.Text))
+                return;
 
-            // Nếu đang nhập một số âm → báo lỗi
-            if (txtDISPLAY.Text.StartsWith("-"))
+            // Kiểm tra nếu giá trị đã chứa %
+            if (txtDISPLAY.Text.Contains("%"))
             {
                 txtDISPLAY.Text = "Invalid input";
                 isErrorState = true;
                 return;
             }
 
-            // Thêm % vào biểu thức, tránh trường hợp thêm trùng lặp
-            if (!txtDISPLAY.Text.EndsWith("%"))
-            {
-                txtDISPLAY.Text += "%";
-                bieuthuc += "%";
-                UpdateCurrentHistory();
-            }
+            // Thêm ký hiệu % vào màn hình và biểu thức
+            txtDISPLAY.Text += "%";
+            bieuthuc += "%";
+            UpdateCurrentHistory();
         }
-
 
         // Các nút phép toán
         private void btnCONG_Click(object sender, EventArgs e)
@@ -339,6 +337,10 @@ namespace CalculatorCUSTOM
 
                 // Lấy giá trị nhập vào cho s2
                 string inputS2 = txtDISPLAY.Text;
+
+                // Kiểm tra nếu s2 có dấu %
+                bool isS2Percent = inputS2.EndsWith("%");
+
                 if (inputS2.StartsWith("√"))
                 {
                     string input = inputS2.Replace("√", "");
@@ -348,24 +350,41 @@ namespace CalculatorCUSTOM
                         {
                             txtDISPLAY.Text = "Invalid input";
                             isErrorState = true;
-
                             return;
                         }
                         s2 = Math.Sqrt(sqrtValue);
+                        if (string.IsNullOrEmpty(pheptinh)) // Nếu không có phép toán, hiển thị kết quả trực tiếp
+                        {
+                            finalResult = s2;
+                            txtDISPLAY.Text = finalResult.ToString();
+                            AddToHistory($"{inputS2} = {finalResult}"); // Lưu vào lịch sử
+                            ResetState(); // Reset trạng thái
+                            return; // Kết thúc hàm
+                        }
                     }
                     else
                     {
                         txtDISPLAY.Text = "Invalid input";
                         isErrorState = true;
-
                         return;
                     }
+                }
+                else if (isS2Percent)
+                {
+                    // Dữ nguyên giá trị với % trên màn hình, chỉ xử lý nếu có phép toán liên quan
+                    string percentPart = inputS2.Replace("%", "");
+                    if (!double.TryParse(percentPart, out double percentValue) || percentValue < 0)
+                    {
+                        txtDISPLAY.Text = "Invalid input";
+                        isErrorState = true;
+                        return;
+                    }
+                    s2 = percentValue; // Giá trị thập phân được tính chỉ khi cần
                 }
                 else if (!double.TryParse(inputS2, out s2))
                 {
                     txtDISPLAY.Text = "Invalid input";
                     isErrorState = true;
-                    ;
                     return;
                 }
 
@@ -373,33 +392,77 @@ namespace CalculatorCUSTOM
                 switch (pheptinh)
                 {
                     case "➕":
-                        finalResult = s1 + s2;
+                        finalResult = s1 + (isS2Percent ? (s1 * s2) / 100 : s2);
                         break;
                     case "➖":
-                        finalResult = s1 - s2;
+                        finalResult = s1 - (isS2Percent ? (s1 * s2) / 100 : s2);
                         break;
                     case "✖️":
-                        finalResult = s1 * s2;
+                        finalResult = s1 * (isS2Percent ? s2 / 100 : s2);
                         break;
                     case "➗":
                         if (s2 == 0)
                         {
                             txtDISPLAY.Text = "Cannot divide by 0";
                             isErrorState = true;
-
                             return;
                         }
-                        finalResult = s1 / s2;
+                        finalResult = s1 / (isS2Percent ? s2 / 100 : s2);
                         break;
                     case "^":
+                        if (isS2Percent)
+                        {
+                            txtDISPLAY.Text = "Invalid operation for %";
+                            isErrorState = true;
+                            return;
+                        }
                         finalResult = Math.Pow(s1, s2);
                         break;
                     default:
-                        txtDISPLAY.Text = "Invalid operation";
-                        isErrorState = true;
-
-                        return;
+                        // Nếu không có phép toán, kiểm tra s2 có ký tự % hay không
+                        if (string.IsNullOrEmpty(pheptinh))
+                        {
+                            if (inputS2.StartsWith("√"))
+                            {
+                                string sqrtPart = inputS2.Replace("√", "");
+                                if (double.TryParse(sqrtPart, out double sqrtValue) && sqrtValue >= 0)
+                                {
+                                    finalResult = Math.Sqrt(sqrtValue);
+                                    txtDISPLAY.Text = finalResult.ToString();
+                                    AddToHistory($"{inputS2} = {finalResult}");
+                                    ResetState();
+                                    return;
+                                }
+                                else
+                                {
+                                    txtDISPLAY.Text = "Invalid input";
+                                    isErrorState = true;
+                                    return;
+                                }
+                            }
+                            else if (isS2Percent)
+                            {
+                                finalResult = s2 / 100; // Chuyển % thành giá trị thập phân
+                                txtDISPLAY.Text = finalResult.ToString();
+                                AddToHistory($"{inputS2} = {finalResult}");
+                                ResetState();
+                                return;
+                            }
+                            else
+                            {
+                                txtDISPLAY.Text = "Invalid operation";
+                                isErrorState = true;
+                                return;
+                            }
+                        }
+                        else
+                        {
+                            txtDISPLAY.Text = "Invalid operation";
+                            isErrorState = true;
+                            return;
+                        }
                 }
+
 
                 // Cập nhật biểu thức và kết quả
                 bieuthuc += $" = {finalResult}";
@@ -416,9 +479,9 @@ namespace CalculatorCUSTOM
             {
                 txtDISPLAY.Text = $"Error: {ex.Message}";
                 isErrorState = true;
-
             }
         }
+
 
 
         // Reset lại trạng thái sau khi tính toán
