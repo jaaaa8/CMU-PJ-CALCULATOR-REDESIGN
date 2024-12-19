@@ -133,10 +133,10 @@
             this.btnCLEARHISTORY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCLEARHISTORY.Font = new System.Drawing.Font("Gadugi", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCLEARHISTORY.ForeColor = System.Drawing.Color.White;
-            this.btnCLEARHISTORY.Location = new System.Drawing.Point(568, 704);
+            this.btnCLEARHISTORY.Location = new System.Drawing.Point(568, 691);
             this.btnCLEARHISTORY.Margin = new System.Windows.Forms.Padding(0);
             this.btnCLEARHISTORY.Name = "btnCLEARHISTORY";
-            this.btnCLEARHISTORY.Size = new System.Drawing.Size(257, 62);
+            this.btnCLEARHISTORY.Size = new System.Drawing.Size(257, 75);
             this.btnCLEARHISTORY.TabIndex = 52;
             this.btnCLEARHISTORY.Text = "🗑️";
             this.btnCLEARHISTORY.UseVisualStyleBackColor = true;
@@ -168,7 +168,7 @@
             this.btnCLEAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCLEAR.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCLEAR.ForeColor = System.Drawing.Color.White;
-            this.btnCLEAR.Location = new System.Drawing.Point(436, 414);
+            this.btnCLEAR.Location = new System.Drawing.Point(436, 415);
             this.btnCLEAR.Margin = new System.Windows.Forms.Padding(0);
             this.btnCLEAR.Name = "btnCLEAR";
             this.btnCLEAR.Size = new System.Drawing.Size(108, 93);
@@ -252,7 +252,7 @@
             this.btnBACKSPACE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBACKSPACE.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBACKSPACE.ForeColor = System.Drawing.Color.White;
-            this.btnBACKSPACE.Location = new System.Drawing.Point(436, 321);
+            this.btnBACKSPACE.Location = new System.Drawing.Point(436, 322);
             this.btnBACKSPACE.Margin = new System.Windows.Forms.Padding(0);
             this.btnBACKSPACE.Name = "btnBACKSPACE";
             this.btnBACKSPACE.Size = new System.Drawing.Size(108, 93);
@@ -273,7 +273,7 @@
             this.btnKETQUA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKETQUA.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKETQUA.ForeColor = System.Drawing.Color.White;
-            this.btnKETQUA.Location = new System.Drawing.Point(436, 691);
+            this.btnKETQUA.Location = new System.Drawing.Point(436, 694);
             this.btnKETQUA.Margin = new System.Windows.Forms.Padding(0);
             this.btnKETQUA.Name = "btnKETQUA";
             this.btnKETQUA.Size = new System.Drawing.Size(108, 93);

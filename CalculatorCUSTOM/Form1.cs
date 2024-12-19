@@ -101,7 +101,7 @@ namespace CalculatorCUSTOM
             }
 
             pheptinh = operation;
-            bieuthuc += $" {operation}"; // Thêm phép toán vào biểu thức
+            bieuthuc += $" {operation}{" "}"; // Thêm phép toán vào biểu thức
             txtDISPLAY.Text = "";
             UpdateCurrentHistory();
         }
@@ -195,9 +195,20 @@ namespace CalculatorCUSTOM
         }
         private void btnCHAM_Click(object sender, EventArgs e)
         {
-            txtDISPLAY.Text += btnCHAM.Text;
-            bieuthuc += btnCHAM.Text;
-            UpdateCurrentHistory();
+            // Nếu màn hình đã trống, thêm "0." thay vì chỉ dấu "."
+            if (string.IsNullOrEmpty(txtDISPLAY.Text))
+            {
+                txtDISPLAY.Text = "0.";
+                bieuthuc += "0.";
+            }
+            // Nếu đã có dấu chấm trong số hiện tại, không cho phép thêm
+            else if (!txtDISPLAY.Text.Contains("."))
+            {
+                txtDISPLAY.Text += ".";
+                bieuthuc += ".";
+            }
+
+            UpdateCurrentHistory(); // Cập nhật lịch sử
         }
 
         // Xử lý dấu %
@@ -383,9 +394,23 @@ namespace CalculatorCUSTOM
                 }
                 else if (!double.TryParse(inputS2, out s2))
                 {
-                    txtDISPLAY.Text = "Invalid input";
-                    isErrorState = true;
-                    return;
+                    // Kiểm tra nếu input kết thúc bằng dấu chấm (vd: "2.")
+                    if (inputS2.EndsWith("."))
+                    {
+                        inputS2 = inputS2.TrimEnd('.'); // Xóa dấu chấm ở cuối
+                        if (!double.TryParse(inputS2, out s2)) // Thử lại sau khi loại bỏ dấu chấm
+                        {
+                            txtDISPLAY.Text = "Invalid input";
+                            isErrorState = true;
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        txtDISPLAY.Text = "Invalid input";
+                        isErrorState = true;
+                        return;
+                    }
                 }
 
                 // Thực hiện phép toán
@@ -482,8 +507,6 @@ namespace CalculatorCUSTOM
             }
         }
 
-
-
         // Reset lại trạng thái sau khi tính toán
         private void ResetState()
         {
@@ -516,6 +539,7 @@ namespace CalculatorCUSTOM
         // Xóa toàn bộ màn hình và lịch sử
         private void btnCLEAR_Click(object sender, EventArgs e)
         {
+            bieuthuc = "";
             txtDISPLAY.Text = "";
             txtCURRENTHISTORY.Text = "";
             isErrorState = false; //reset trang thai loi
