@@ -126,73 +126,7 @@ namespace CalculatorCUSTOM
             UpdateCurrentHistory(); // Cập nhật txtCURRENTHISTORY
         }
 
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn1.Text;
-            bieuthuc += btn1.Text;
-            UpdateCurrentHistory();
-        }
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn2.Text;
-            bieuthuc += btn2.Text;
-            UpdateCurrentHistory();
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn3.Text;
-            bieuthuc += btn3.Text;
-            UpdateCurrentHistory();
-        }
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn4.Text;
-            bieuthuc += btn4.Text;
-            UpdateCurrentHistory();
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn5.Text;
-            bieuthuc += btn5.Text;
-            UpdateCurrentHistory();
-        }
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn6.Text;
-            bieuthuc += btn6.Text;
-            UpdateCurrentHistory();
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn7.Text;
-            bieuthuc += btn7.Text;
-            UpdateCurrentHistory();
-        }
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn8.Text;
-            bieuthuc += btn8.Text;
-            UpdateCurrentHistory();
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState(); ;
-            txtDISPLAY.Text += btn9.Text;
-            bieuthuc += btn9.Text;
-            UpdateCurrentHistory();
-        }
+        
         private void btnCHAM_Click(object sender, EventArgs e)
         {
             // Nếu màn hình đã trống, thêm "0." thay vì chỉ dấu "."
@@ -562,7 +496,14 @@ namespace CalculatorCUSTOM
 
         private void btnNum_Click(object sender, EventArgs e)
         {
-
+            if (isErrorState) HandleErrorState();
+            Button btn = sender as Button;
+            if (btn != null)
+            {
+                txtDISPLAY.Text += btn.Text;
+                bieuthuc += btn.Text;
+                UpdateCurrentHistory();
+            }
         }
     }
 }

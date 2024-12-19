@@ -66,7 +66,7 @@
             this.txtDISPLAY.Enabled = false;
             this.txtDISPLAY.Font = new System.Drawing.Font("Tahoma", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDISPLAY.ForeColor = System.Drawing.Color.Silver;
-            this.txtDISPLAY.Location = new System.Drawing.Point(4, 116);
+            this.txtDISPLAY.Location = new System.Drawing.Point(4, 102);
             this.txtDISPLAY.Margin = new System.Windows.Forms.Padding(0);
             this.txtDISPLAY.Multiline = true;
             this.txtDISPLAY.Name = "txtDISPLAY";
@@ -164,7 +164,7 @@
             this.btnCLEAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCLEAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCLEAR.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnCLEAR.BorderRadius = 30;
+            this.btnCLEAR.BorderRadius = 23;
             this.btnCLEAR.BorderSize = 0;
             this.btnCLEAR.FlatAppearance.BorderSize = 0;
             this.btnCLEAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -186,7 +186,7 @@
             this.btnCONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCONG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCONG.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnCONG.BorderRadius = 30;
+            this.btnCONG.BorderRadius = 23;
             this.btnCONG.BorderSize = 0;
             this.btnCONG.FlatAppearance.BorderSize = 0;
             this.btnCONG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -208,7 +208,7 @@
             this.btnCAN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCAN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCAN.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnCAN.BorderRadius = 30;
+            this.btnCAN.BorderRadius = 23;
             this.btnCAN.BorderSize = 0;
             this.btnCAN.FlatAppearance.BorderSize = 0;
             this.btnCAN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -230,7 +230,7 @@
             this.btnLUYTHUA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnLUYTHUA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLUYTHUA.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnLUYTHUA.BorderRadius = 30;
+            this.btnLUYTHUA.BorderRadius = 23;
             this.btnLUYTHUA.BorderSize = 0;
             this.btnLUYTHUA.FlatAppearance.BorderSize = 0;
             this.btnLUYTHUA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -274,7 +274,7 @@
             this.btnKETQUA.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnKETQUA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnKETQUA.BackgroupColor = System.Drawing.SystemColors.Highlight;
-            this.btnKETQUA.BorderRadius = 30;
+            this.btnKETQUA.BorderRadius = 23;
             this.btnKETQUA.BorderSize = 0;
             this.btnKETQUA.FlatAppearance.BorderSize = 0;
             this.btnKETQUA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -295,7 +295,7 @@
             this.btnCHIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCHIA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCHIA.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnCHIA.BorderRadius = 30;
+            this.btnCHIA.BorderRadius = 23;
             this.btnCHIA.BorderSize = 0;
             this.btnCHIA.FlatAppearance.BorderSize = 0;
             this.btnCHIA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -317,7 +317,7 @@
             this.btnNHAN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnNHAN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnNHAN.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnNHAN.BorderRadius = 30;
+            this.btnNHAN.BorderRadius = 23;
             this.btnNHAN.BorderSize = 0;
             this.btnNHAN.FlatAppearance.BorderSize = 0;
             this.btnNHAN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -339,7 +339,7 @@
             this.btnTRU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnTRU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnTRU.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.btnTRU.BorderRadius = 30;
+            this.btnTRU.BorderRadius = 23;
             this.btnTRU.BorderSize = 0;
             this.btnTRU.FlatAppearance.BorderSize = 0;
             this.btnTRU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
@@ -361,7 +361,7 @@
             this.btnCHAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnCHAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCHAM.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnCHAM.BorderRadius = 30;
+            this.btnCHAM.BorderRadius = 23;
             this.btnCHAM.BorderSize = 0;
             this.btnCHAM.FlatAppearance.BorderSize = 0;
             this.btnCHAM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -383,7 +383,7 @@
             this.btnPHANTRAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnPHANTRAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnPHANTRAM.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnPHANTRAM.BorderRadius = 30;
+            this.btnPHANTRAM.BorderRadius = 23;
             this.btnPHANTRAM.BorderSize = 0;
             this.btnPHANTRAM.FlatAppearance.BorderSize = 0;
             this.btnPHANTRAM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -405,7 +405,7 @@
             this.btn0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn0.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn0.BorderRadius = 30;
+            this.btn0.BorderRadius = 23;
             this.btn0.BorderSize = 0;
             this.btn0.FlatAppearance.BorderSize = 0;
             this.btn0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -420,14 +420,14 @@
             this.btn0.Text = "0";
             this.btn0.TextColor = System.Drawing.Color.White;
             this.btn0.UseVisualStyleBackColor = false;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            this.btn0.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn9.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn9.BorderRadius = 30;
+            this.btn9.BorderRadius = 23;
             this.btn9.BorderSize = 0;
             this.btn9.FlatAppearance.BorderSize = 0;
             this.btn9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -442,14 +442,14 @@
             this.btn9.Text = "9";
             this.btn9.TextColor = System.Drawing.Color.White;
             this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn8
             // 
             this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn8.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn8.BorderRadius = 30;
+            this.btn8.BorderRadius = 23;
             this.btn8.BorderSize = 0;
             this.btn8.FlatAppearance.BorderSize = 0;
             this.btn8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -464,14 +464,14 @@
             this.btn8.Text = "8";
             this.btn8.TextColor = System.Drawing.Color.White;
             this.btn8.UseVisualStyleBackColor = false;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.btn8.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn7
             // 
             this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn7.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn7.BorderRadius = 30;
+            this.btn7.BorderRadius = 23;
             this.btn7.BorderSize = 0;
             this.btn7.FlatAppearance.BorderSize = 0;
             this.btn7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -486,14 +486,14 @@
             this.btn7.Text = "7";
             this.btn7.TextColor = System.Drawing.Color.White;
             this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn7.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn6
             // 
             this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn6.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn6.BorderRadius = 30;
+            this.btn6.BorderRadius = 23;
             this.btn6.BorderSize = 0;
             this.btn6.FlatAppearance.BorderSize = 0;
             this.btn6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -508,14 +508,14 @@
             this.btn6.Text = "6";
             this.btn6.TextColor = System.Drawing.Color.White;
             this.btn6.UseVisualStyleBackColor = false;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.btn6.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn5
             // 
             this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn5.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn5.BorderRadius = 30;
+            this.btn5.BorderRadius = 23;
             this.btn5.BorderSize = 0;
             this.btn5.FlatAppearance.BorderSize = 0;
             this.btn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -530,14 +530,14 @@
             this.btn5.Text = "5";
             this.btn5.TextColor = System.Drawing.Color.White;
             this.btn5.UseVisualStyleBackColor = false;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.btn5.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn4
             // 
             this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn4.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn4.BorderRadius = 30;
+            this.btn4.BorderRadius = 23;
             this.btn4.BorderSize = 0;
             this.btn4.FlatAppearance.BorderSize = 0;
             this.btn4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -552,14 +552,14 @@
             this.btn4.Text = "4";
             this.btn4.TextColor = System.Drawing.Color.White;
             this.btn4.UseVisualStyleBackColor = false;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn4.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn3
             // 
             this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn3.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn3.BorderRadius = 30;
+            this.btn3.BorderRadius = 23;
             this.btn3.BorderSize = 0;
             this.btn3.FlatAppearance.BorderSize = 0;
             this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -574,14 +574,14 @@
             this.btn3.Text = "3";
             this.btn3.TextColor = System.Drawing.Color.White;
             this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn2
             // 
             this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn2.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn2.BorderRadius = 30;
+            this.btn2.BorderRadius = 23;
             this.btn2.BorderSize = 0;
             this.btn2.FlatAppearance.BorderSize = 0;
             this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -596,14 +596,14 @@
             this.btn2.Text = "2";
             this.btn2.TextColor = System.Drawing.Color.White;
             this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // btn1
             // 
             this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn1.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn1.BorderRadius = 30;
+            this.btn1.BorderRadius = 23;
             this.btn1.BorderSize = 0;
             this.btn1.FlatAppearance.BorderSize = 0;
             this.btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -618,7 +618,7 @@
             this.btn1.Text = "1";
             this.btn1.TextColor = System.Drawing.Color.White;
             this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.Click += new System.EventHandler(this.btnNum_Click);
             // 
             // Form1
             // 
