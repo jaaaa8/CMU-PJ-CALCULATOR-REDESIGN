@@ -74,7 +74,7 @@ namespace CalculatorCUSTOM
                     {
                         txtDISPLAY.Text = "Invalid input";
                         isErrorState = true;
-                        
+
                         return;
                     }
                     s1 = Math.Sqrt(sqrtValue); // Lưu giá trị thập phân
@@ -84,7 +84,7 @@ namespace CalculatorCUSTOM
                 {
                     txtDISPLAY.Text = "Invalid input";
                     isErrorState = true;
-                    
+
                     return;
                 }
             }
@@ -92,7 +92,7 @@ namespace CalculatorCUSTOM
             {
                 txtDISPLAY.Text = "Invalid input";
                 isErrorState = true;
-                
+
                 return;
             }
             else
@@ -110,7 +110,7 @@ namespace CalculatorCUSTOM
         private void HandleErrorState()
         {
             if (isErrorState)
-            {   
+            {
                 txtDISPLAY.Text = "";   // Xóa màn hình nếu đang ở trạng thái lỗi
                 txtCURRENTHISTORY.Text = "";  // Reset lịch sử biểu thức hiện tại
                 isErrorState = false;   // Đặt lại trạng thái
@@ -275,7 +275,7 @@ namespace CalculatorCUSTOM
             {
                 txtDISPLAY.Text = "";
                 isErrorState = false;
-                
+
             }
 
             // Kiểm tra nếu căn bậc hai có sẵn
@@ -552,10 +552,15 @@ namespace CalculatorCUSTOM
         }
         private void UpdateCurrentHistory()
         {
-            txtCURRENTHISTORY.Text = bieuthuc ; // Cập nhật biểu thức vào txtCURRENTHISTORY
+            txtCURRENTHISTORY.Text = bieuthuc; // Cập nhật biểu thức vào txtCURRENTHISTORY
         }
 
         private void txtCURRENTHISTORY_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNum_Click(object sender, EventArgs e)
         {
 
         }

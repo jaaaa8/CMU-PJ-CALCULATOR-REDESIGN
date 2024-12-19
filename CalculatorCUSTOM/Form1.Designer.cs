@@ -66,11 +66,11 @@
             this.txtDISPLAY.Enabled = false;
             this.txtDISPLAY.Font = new System.Drawing.Font("Tahoma", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDISPLAY.ForeColor = System.Drawing.Color.Silver;
-            this.txtDISPLAY.Location = new System.Drawing.Point(4, 143);
+            this.txtDISPLAY.Location = new System.Drawing.Point(4, 116);
             this.txtDISPLAY.Margin = new System.Windows.Forms.Padding(0);
             this.txtDISPLAY.Multiline = true;
             this.txtDISPLAY.Name = "txtDISPLAY";
-            this.txtDISPLAY.Size = new System.Drawing.Size(535, 167);
+            this.txtDISPLAY.Size = new System.Drawing.Size(432, 167);
             this.txtDISPLAY.TabIndex = 5;
             this.txtDISPLAY.Text = "0";
             this.txtDISPLAY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -78,13 +78,14 @@
             // 
             // btnTHOAT
             // 
-            this.btnTHOAT.BackColor = System.Drawing.Color.Brown;
+            this.btnTHOAT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.btnTHOAT.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnTHOAT.FlatAppearance.BorderSize = 0;
+            this.btnTHOAT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnTHOAT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTHOAT.Font = new System.Drawing.Font("Gadugi", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTHOAT.Font = new System.Drawing.Font("Gadugi", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTHOAT.ForeColor = System.Drawing.Color.White;
-            this.btnTHOAT.Location = new System.Drawing.Point(468, 0);
+            this.btnTHOAT.Location = new System.Drawing.Point(360, 0);
             this.btnTHOAT.Margin = new System.Windows.Forms.Padding(0);
             this.btnTHOAT.Name = "btnTHOAT";
             this.btnTHOAT.Size = new System.Drawing.Size(72, 62);
@@ -98,7 +99,7 @@
             this.panel1.Controls.Add(this.btnTHOAT);
             this.panel1.Location = new System.Drawing.Point(4, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(540, 62);
+            this.panel1.Size = new System.Drawing.Size(432, 62);
             this.panel1.TabIndex = 49;
             // 
             // txtHISTORY
@@ -106,13 +107,13 @@
             this.txtHISTORY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtHISTORY.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHISTORY.Enabled = false;
-            this.txtHISTORY.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHISTORY.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHISTORY.ForeColor = System.Drawing.Color.Silver;
-            this.txtHISTORY.Location = new System.Drawing.Point(559, 48);
+            this.txtHISTORY.Location = new System.Drawing.Point(455, 69);
             this.txtHISTORY.Margin = new System.Windows.Forms.Padding(0);
             this.txtHISTORY.Multiline = true;
             this.txtHISTORY.Name = "txtHISTORY";
-            this.txtHISTORY.Size = new System.Drawing.Size(266, 718);
+            this.txtHISTORY.Size = new System.Drawing.Size(260, 589);
             this.txtHISTORY.TabIndex = 50;
             this.txtHISTORY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -121,22 +122,23 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gadugi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(563, 9);
+            this.label1.Location = new System.Drawing.Point(450, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 27);
+            this.label1.Size = new System.Drawing.Size(84, 27);
             this.label1.TabIndex = 51;
-            this.label1.Text = "HISTORY";
+            this.label1.Text = "History";
             // 
             // btnCLEARHISTORY
             // 
             this.btnCLEARHISTORY.FlatAppearance.BorderSize = 0;
+            this.btnCLEARHISTORY.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCLEARHISTORY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCLEARHISTORY.Font = new System.Drawing.Font("Gadugi", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCLEARHISTORY.Font = new System.Drawing.Font("Gadugi", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCLEARHISTORY.ForeColor = System.Drawing.Color.White;
-            this.btnCLEARHISTORY.Location = new System.Drawing.Point(568, 691);
+            this.btnCLEARHISTORY.Location = new System.Drawing.Point(645, 0);
             this.btnCLEARHISTORY.Margin = new System.Windows.Forms.Padding(0);
             this.btnCLEARHISTORY.Name = "btnCLEARHISTORY";
-            this.btnCLEARHISTORY.Size = new System.Drawing.Size(257, 75);
+            this.btnCLEARHISTORY.Size = new System.Drawing.Size(70, 69);
             this.btnCLEARHISTORY.TabIndex = 52;
             this.btnCLEARHISTORY.Text = "🗑️";
             this.btnCLEARHISTORY.UseVisualStyleBackColor = true;
@@ -147,28 +149,29 @@
             this.txtCURRENTHISTORY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.txtCURRENTHISTORY.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCURRENTHISTORY.Enabled = false;
-            this.txtCURRENTHISTORY.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCURRENTHISTORY.Font = new System.Drawing.Font("Tahoma", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCURRENTHISTORY.ForeColor = System.Drawing.Color.Silver;
-            this.txtCURRENTHISTORY.Location = new System.Drawing.Point(4, 95);
+            this.txtCURRENTHISTORY.Location = new System.Drawing.Point(4, 65);
             this.txtCURRENTHISTORY.Margin = new System.Windows.Forms.Padding(0);
             this.txtCURRENTHISTORY.Name = "txtCURRENTHISTORY";
-            this.txtCURRENTHISTORY.Size = new System.Drawing.Size(535, 40);
+            this.txtCURRENTHISTORY.Size = new System.Drawing.Size(432, 27);
             this.txtCURRENTHISTORY.TabIndex = 54;
             this.txtCURRENTHISTORY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtCURRENTHISTORY.TextChanged += new System.EventHandler(this.txtCURRENTHISTORY_TextChanged);
             // 
             // btnCLEAR
             // 
-            this.btnCLEAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnCLEAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCLEAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCLEAR.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnCLEAR.BorderRadius = 70;
+            this.btnCLEAR.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCLEAR.BorderRadius = 30;
             this.btnCLEAR.BorderSize = 0;
             this.btnCLEAR.FlatAppearance.BorderSize = 0;
+            this.btnCLEAR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnCLEAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCLEAR.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCLEAR.ForeColor = System.Drawing.Color.White;
-            this.btnCLEAR.Location = new System.Drawing.Point(436, 415);
+            this.btnCLEAR.Location = new System.Drawing.Point(4, 286);
             this.btnCLEAR.Margin = new System.Windows.Forms.Padding(0);
             this.btnCLEAR.Name = "btnCLEAR";
             this.btnCLEAR.Size = new System.Drawing.Size(108, 93);
@@ -180,16 +183,17 @@
             // 
             // btnCONG
             // 
-            this.btnCONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnCONG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCONG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCONG.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnCONG.BorderRadius = 70;
+            this.btnCONG.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCONG.BorderRadius = 30;
             this.btnCONG.BorderSize = 0;
             this.btnCONG.FlatAppearance.BorderSize = 0;
+            this.btnCONG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnCONG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCONG.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCONG.ForeColor = System.Drawing.Color.White;
-            this.btnCONG.Location = new System.Drawing.Point(328, 415);
+            this.btnCONG.Location = new System.Drawing.Point(328, 286);
             this.btnCONG.Margin = new System.Windows.Forms.Padding(0);
             this.btnCONG.Name = "btnCONG";
             this.btnCONG.Size = new System.Drawing.Size(108, 93);
@@ -201,16 +205,17 @@
             // 
             // btnCAN
             // 
-            this.btnCAN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnCAN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCAN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCAN.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnCAN.BorderRadius = 70;
+            this.btnCAN.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCAN.BorderRadius = 30;
             this.btnCAN.BorderSize = 0;
             this.btnCAN.FlatAppearance.BorderSize = 0;
+            this.btnCAN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnCAN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCAN.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCAN.ForeColor = System.Drawing.Color.White;
-            this.btnCAN.Location = new System.Drawing.Point(436, 601);
+            this.btnCAN.Location = new System.Drawing.Point(220, 286);
             this.btnCAN.Margin = new System.Windows.Forms.Padding(0);
             this.btnCAN.Name = "btnCAN";
             this.btnCAN.Size = new System.Drawing.Size(108, 93);
@@ -222,16 +227,17 @@
             // 
             // btnLUYTHUA
             // 
-            this.btnLUYTHUA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnLUYTHUA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnLUYTHUA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLUYTHUA.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnLUYTHUA.BorderRadius = 70;
+            this.btnLUYTHUA.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnLUYTHUA.BorderRadius = 30;
             this.btnLUYTHUA.BorderSize = 0;
             this.btnLUYTHUA.FlatAppearance.BorderSize = 0;
+            this.btnLUYTHUA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnLUYTHUA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLUYTHUA.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLUYTHUA.ForeColor = System.Drawing.Color.White;
-            this.btnLUYTHUA.Location = new System.Drawing.Point(436, 508);
+            this.btnLUYTHUA.Location = new System.Drawing.Point(112, 286);
             this.btnLUYTHUA.Margin = new System.Windows.Forms.Padding(0);
             this.btnLUYTHUA.Name = "btnLUYTHUA";
             this.btnLUYTHUA.Size = new System.Drawing.Size(108, 93);
@@ -243,19 +249,20 @@
             // 
             // btnBACKSPACE
             // 
-            this.btnBACKSPACE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnBACKSPACE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.btnBACKSPACE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBACKSPACE.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnBACKSPACE.BorderRadius = 70;
+            this.btnBACKSPACE.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.btnBACKSPACE.BorderRadius = 20;
             this.btnBACKSPACE.BorderSize = 0;
             this.btnBACKSPACE.FlatAppearance.BorderSize = 0;
+            this.btnBACKSPACE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnBACKSPACE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBACKSPACE.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBACKSPACE.ForeColor = System.Drawing.Color.White;
-            this.btnBACKSPACE.Location = new System.Drawing.Point(436, 322);
+            this.btnBACKSPACE.Location = new System.Drawing.Point(436, 658);
             this.btnBACKSPACE.Margin = new System.Windows.Forms.Padding(0);
             this.btnBACKSPACE.Name = "btnBACKSPACE";
-            this.btnBACKSPACE.Size = new System.Drawing.Size(108, 93);
+            this.btnBACKSPACE.Size = new System.Drawing.Size(279, 93);
             this.btnBACKSPACE.TabIndex = 45;
             this.btnBACKSPACE.Text = "⌫";
             this.btnBACKSPACE.TextColor = System.Drawing.Color.White;
@@ -267,13 +274,13 @@
             this.btnKETQUA.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnKETQUA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnKETQUA.BackgroupColor = System.Drawing.SystemColors.Highlight;
-            this.btnKETQUA.BorderRadius = 70;
+            this.btnKETQUA.BorderRadius = 30;
             this.btnKETQUA.BorderSize = 0;
             this.btnKETQUA.FlatAppearance.BorderSize = 0;
             this.btnKETQUA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKETQUA.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKETQUA.ForeColor = System.Drawing.Color.White;
-            this.btnKETQUA.Location = new System.Drawing.Point(436, 694);
+            this.btnKETQUA.Location = new System.Drawing.Point(328, 658);
             this.btnKETQUA.Margin = new System.Windows.Forms.Padding(0);
             this.btnKETQUA.Name = "btnKETQUA";
             this.btnKETQUA.Size = new System.Drawing.Size(108, 93);
@@ -285,16 +292,17 @@
             // 
             // btnCHIA
             // 
-            this.btnCHIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnCHIA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCHIA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCHIA.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnCHIA.BorderRadius = 70;
+            this.btnCHIA.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCHIA.BorderRadius = 30;
             this.btnCHIA.BorderSize = 0;
             this.btnCHIA.FlatAppearance.BorderSize = 0;
+            this.btnCHIA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnCHIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCHIA.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCHIA.ForeColor = System.Drawing.Color.White;
-            this.btnCHIA.Location = new System.Drawing.Point(328, 691);
+            this.btnCHIA.Location = new System.Drawing.Point(328, 565);
             this.btnCHIA.Margin = new System.Windows.Forms.Padding(0);
             this.btnCHIA.Name = "btnCHIA";
             this.btnCHIA.Size = new System.Drawing.Size(108, 93);
@@ -306,16 +314,17 @@
             // 
             // btnNHAN
             // 
-            this.btnNHAN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnNHAN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnNHAN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnNHAN.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnNHAN.BorderRadius = 70;
+            this.btnNHAN.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnNHAN.BorderRadius = 30;
             this.btnNHAN.BorderSize = 0;
             this.btnNHAN.FlatAppearance.BorderSize = 0;
+            this.btnNHAN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnNHAN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNHAN.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNHAN.ForeColor = System.Drawing.Color.White;
-            this.btnNHAN.Location = new System.Drawing.Point(328, 601);
+            this.btnNHAN.Location = new System.Drawing.Point(328, 472);
             this.btnNHAN.Margin = new System.Windows.Forms.Padding(0);
             this.btnNHAN.Name = "btnNHAN";
             this.btnNHAN.Size = new System.Drawing.Size(108, 93);
@@ -327,16 +336,17 @@
             // 
             // btnTRU
             // 
-            this.btnTRU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnTRU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnTRU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnTRU.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnTRU.BorderRadius = 70;
+            this.btnTRU.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnTRU.BorderRadius = 30;
             this.btnTRU.BorderSize = 0;
             this.btnTRU.FlatAppearance.BorderSize = 0;
+            this.btnTRU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnTRU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTRU.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTRU.ForeColor = System.Drawing.Color.White;
-            this.btnTRU.Location = new System.Drawing.Point(328, 508);
+            this.btnTRU.Location = new System.Drawing.Point(328, 379);
             this.btnTRU.Margin = new System.Windows.Forms.Padding(0);
             this.btnTRU.Name = "btnTRU";
             this.btnTRU.Size = new System.Drawing.Size(108, 93);
@@ -351,13 +361,14 @@
             this.btnCHAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnCHAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCHAM.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnCHAM.BorderRadius = 70;
+            this.btnCHAM.BorderRadius = 30;
             this.btnCHAM.BorderSize = 0;
             this.btnCHAM.FlatAppearance.BorderSize = 0;
+            this.btnCHAM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCHAM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCHAM.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCHAM.ForeColor = System.Drawing.Color.White;
-            this.btnCHAM.Location = new System.Drawing.Point(4, 691);
+            this.btnCHAM.Location = new System.Drawing.Point(4, 658);
             this.btnCHAM.Margin = new System.Windows.Forms.Padding(0);
             this.btnCHAM.Name = "btnCHAM";
             this.btnCHAM.Size = new System.Drawing.Size(108, 93);
@@ -372,13 +383,14 @@
             this.btnPHANTRAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btnPHANTRAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnPHANTRAM.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnPHANTRAM.BorderRadius = 70;
+            this.btnPHANTRAM.BorderRadius = 30;
             this.btnPHANTRAM.BorderSize = 0;
             this.btnPHANTRAM.FlatAppearance.BorderSize = 0;
+            this.btnPHANTRAM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnPHANTRAM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPHANTRAM.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPHANTRAM.ForeColor = System.Drawing.Color.White;
-            this.btnPHANTRAM.Location = new System.Drawing.Point(220, 691);
+            this.btnPHANTRAM.Location = new System.Drawing.Point(220, 658);
             this.btnPHANTRAM.Margin = new System.Windows.Forms.Padding(0);
             this.btnPHANTRAM.Name = "btnPHANTRAM";
             this.btnPHANTRAM.Size = new System.Drawing.Size(108, 93);
@@ -393,13 +405,14 @@
             this.btn0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn0.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn0.BorderRadius = 70;
+            this.btn0.BorderRadius = 30;
             this.btn0.BorderSize = 0;
             this.btn0.FlatAppearance.BorderSize = 0;
+            this.btn0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn0.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.ForeColor = System.Drawing.Color.White;
-            this.btn0.Location = new System.Drawing.Point(112, 691);
+            this.btn0.Location = new System.Drawing.Point(112, 658);
             this.btn0.Margin = new System.Windows.Forms.Padding(0);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(108, 93);
@@ -414,13 +427,14 @@
             this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn9.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn9.BorderRadius = 70;
+            this.btn9.BorderRadius = 30;
             this.btn9.BorderSize = 0;
             this.btn9.FlatAppearance.BorderSize = 0;
+            this.btn9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.White;
-            this.btn9.Location = new System.Drawing.Point(220, 415);
+            this.btn9.Location = new System.Drawing.Point(220, 379);
             this.btn9.Margin = new System.Windows.Forms.Padding(0);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(108, 93);
@@ -435,13 +449,14 @@
             this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn8.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn8.BorderRadius = 70;
+            this.btn8.BorderRadius = 30;
             this.btn8.BorderSize = 0;
             this.btn8.FlatAppearance.BorderSize = 0;
+            this.btn8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.White;
-            this.btn8.Location = new System.Drawing.Point(112, 415);
+            this.btn8.Location = new System.Drawing.Point(112, 379);
             this.btn8.Margin = new System.Windows.Forms.Padding(0);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(108, 93);
@@ -456,13 +471,14 @@
             this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn7.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn7.BorderRadius = 70;
+            this.btn7.BorderRadius = 30;
             this.btn7.BorderSize = 0;
             this.btn7.FlatAppearance.BorderSize = 0;
+            this.btn7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.ForeColor = System.Drawing.Color.White;
-            this.btn7.Location = new System.Drawing.Point(4, 415);
+            this.btn7.Location = new System.Drawing.Point(4, 379);
             this.btn7.Margin = new System.Windows.Forms.Padding(0);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(108, 93);
@@ -477,13 +493,14 @@
             this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn6.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn6.BorderRadius = 70;
+            this.btn6.BorderRadius = 30;
             this.btn6.BorderSize = 0;
             this.btn6.FlatAppearance.BorderSize = 0;
+            this.btn6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.White;
-            this.btn6.Location = new System.Drawing.Point(220, 508);
+            this.btn6.Location = new System.Drawing.Point(220, 472);
             this.btn6.Margin = new System.Windows.Forms.Padding(0);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(108, 93);
@@ -498,13 +515,14 @@
             this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn5.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn5.BorderRadius = 70;
+            this.btn5.BorderRadius = 30;
             this.btn5.BorderSize = 0;
             this.btn5.FlatAppearance.BorderSize = 0;
+            this.btn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.White;
-            this.btn5.Location = new System.Drawing.Point(112, 508);
+            this.btn5.Location = new System.Drawing.Point(112, 472);
             this.btn5.Margin = new System.Windows.Forms.Padding(0);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(108, 93);
@@ -519,13 +537,14 @@
             this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn4.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn4.BorderRadius = 70;
+            this.btn4.BorderRadius = 30;
             this.btn4.BorderSize = 0;
             this.btn4.FlatAppearance.BorderSize = 0;
+            this.btn4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.White;
-            this.btn4.Location = new System.Drawing.Point(4, 508);
+            this.btn4.Location = new System.Drawing.Point(4, 472);
             this.btn4.Margin = new System.Windows.Forms.Padding(0);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(108, 93);
@@ -540,16 +559,17 @@
             this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn3.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn3.BorderRadius = 70;
+            this.btn3.BorderRadius = 30;
             this.btn3.BorderSize = 0;
             this.btn3.FlatAppearance.BorderSize = 0;
+            this.btn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.White;
-            this.btn3.Location = new System.Drawing.Point(220, 601);
+            this.btn3.Location = new System.Drawing.Point(220, 566);
             this.btn3.Margin = new System.Windows.Forms.Padding(0);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(108, 93);
+            this.btn3.Size = new System.Drawing.Size(108, 92);
             this.btn3.TabIndex = 31;
             this.btn3.Text = "3";
             this.btn3.TextColor = System.Drawing.Color.White;
@@ -561,16 +581,17 @@
             this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn2.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn2.BorderRadius = 70;
+            this.btn2.BorderRadius = 30;
             this.btn2.BorderSize = 0;
             this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.White;
-            this.btn2.Location = new System.Drawing.Point(112, 601);
+            this.btn2.Location = new System.Drawing.Point(112, 566);
             this.btn2.Margin = new System.Windows.Forms.Padding(0);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(108, 93);
+            this.btn2.Size = new System.Drawing.Size(108, 92);
             this.btn2.TabIndex = 30;
             this.btn2.Text = "2";
             this.btn2.TextColor = System.Drawing.Color.White;
@@ -582,16 +603,17 @@
             this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn1.BackgroupColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btn1.BorderRadius = 70;
+            this.btn1.BorderRadius = 30;
             this.btn1.BorderSize = 0;
             this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.White;
-            this.btn1.Location = new System.Drawing.Point(4, 601);
+            this.btn1.Location = new System.Drawing.Point(4, 566);
             this.btn1.Margin = new System.Windows.Forms.Padding(0);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(108, 93);
+            this.btn1.Size = new System.Drawing.Size(108, 92);
             this.btn1.TabIndex = 29;
             this.btn1.Text = "1";
             this.btn1.TextColor = System.Drawing.Color.White;
@@ -603,7 +625,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(834, 790);
+            this.ClientSize = new System.Drawing.Size(725, 760);
             this.Controls.Add(this.txtCURRENTHISTORY);
             this.Controls.Add(this.btnCLEAR);
             this.Controls.Add(this.btnCLEARHISTORY);
@@ -634,7 +656,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form1";
+            this.Text = "SZS";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.button1_Click);
             this.panel1.ResumeLayout(false);

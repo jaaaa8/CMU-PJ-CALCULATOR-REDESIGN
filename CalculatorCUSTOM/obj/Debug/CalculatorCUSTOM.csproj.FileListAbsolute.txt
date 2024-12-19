@@ -8,3 +8,13 @@ C:\Users\TechCare\source\repos\CalculatorCUSTOM\CalculatorCUSTOM\obj\Debug\Calcu
 C:\Users\TechCare\source\repos\CalculatorCUSTOM\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.exe
 C:\Users\TechCare\source\repos\CalculatorCUSTOM\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.pdb
 C:\Users\TechCare\source\repos\CalculatorCUSTOM\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.Form1.resources
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\bin\Debug\CalculatorCUSTOM.exe.config
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\bin\Debug\CalculatorCUSTOM.exe
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\bin\Debug\CalculatorCUSTOM.pdb
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.Form1.resources
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.exe
+C:\Users\LENOVO\Desktop\CMU-PJ-CALCULATOR-REDESIGN\CMU-PJ-CALCULATOR-REDESIGN\CalculatorCUSTOM\obj\Debug\CalculatorCUSTOM.pdb
