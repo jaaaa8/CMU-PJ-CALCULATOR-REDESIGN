@@ -117,16 +117,8 @@ namespace CalculatorCUSTOM
                 bieuthuc = "";        // Làm sạch biểu thức (nếu cần)
             }
         }
-        // Xử lý các nút số
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            if (isErrorState) HandleErrorState();
-            txtDISPLAY.Text += btn0.Text;
-            bieuthuc += btn0.Text;
-            UpdateCurrentHistory(); // Cập nhật txtCURRENTHISTORY
-        }
 
-        
+       
         private void btnCHAM_Click(object sender, EventArgs e)
         {
             // Nếu màn hình đã trống, thêm "0." thay vì chỉ dấu "."
@@ -369,13 +361,25 @@ namespace CalculatorCUSTOM
                         finalResult = s1 / (isS2Percent ? s2 / 100 : s2);
                         break;
                     case "^":
-                        if (isS2Percent)
+                        // Kiểm tra nếu inputS2 có dấu âm
+                        bool isNegativeBase = inputS2.StartsWith("-") && !inputS2.StartsWith("-√");
+
+                        double baseValue = s1; // Cơ số
+                        double exponentValue = isS2Percent ? (s2 / 100) : s2; // Số mũ
+
+                        if (isNegativeBase)
                         {
-                            txtDISPLAY.Text = "Invalid operation for %";
+                            baseValue = -s1; // Áp dụng dấu âm vào cơ số
+                        }
+
+                        finalResult = Math.Pow(baseValue, exponentValue); // Thực hiện phép toán lũy thừa
+
+                        if (double.IsNaN(finalResult) || double.IsInfinity(finalResult))
+                        {
+                            txtDISPLAY.Text = "Invalid input";
                             isErrorState = true;
                             return;
                         }
-                        finalResult = Math.Pow(s1, s2);
                         break;
                     default:
                         // Nếu không có phép toán, kiểm tra s2 có ký tự % hay không
@@ -494,6 +498,7 @@ namespace CalculatorCUSTOM
 
         }
 
+        //Gộp các nút số
         private void btnNum_Click(object sender, EventArgs e)
         {
             if (isErrorState) HandleErrorState();
